@@ -1,0 +1,36 @@
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    background-color: slateblue;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+&__logo{
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+&__right{
+    .icon{
+        color: white;
+        font-size: 23px;
+        margin-left: 15px;
+    }
+    :active{
+        color: blue;
+    }
+    .icon-red{
+        color: red;
+    }
+}
+&__cart-length{
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    color:white;
+}
+}

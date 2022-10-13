@@ -1,0 +1,137 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    .btn-up{
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+        background-color: white;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        border-radius: 50%;
+    }
+    .arrow{
+        position: absolute;
+        right: -15px;
+        transition: .5s;
+    }
+    .arrow-up{
+
+        transform: rotate(-180deg);
+    }
+    .empty {
+        color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__card {
+        position: relative;
+
+        &-img {
+            width: 100%;
+        }
+
+        &-bottom {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            padding: 10px;
+            background-color: rgba(250, 235, 215, 0.7);
+            width: 100%;
+        }
+
+        &-rarity {
+            color: slateblue;
+        }
+
+        &-price {
+            color: red;
+        }
+
+        &-btn {
+            display: flex;
+            column-gap: 5px;
+
+            button {
+                background-color: red;
+                color: yellow;
+                border: none;
+                border-radius: 5px;
+                padding: 3px;
+                text-transform: lowercase;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__rarities {
+        margin-bottom: 15px;
+        padding: 0 15px;
+transition: 1.5s;
+&-row{
+    display: flex;
+  column-gap: 10px;
+  &-right{
+    flex-direction: column;
+    row-gap: 10px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+  }
+  &-show{
+    margin-top: 10px;
+    height: initial;
+    overflow: initial;
+    opacity: 1;
+  }
+}
+.category-btn-hidden{
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+.category-btn-show{
+    background-color: transparent;
+    border:  none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+}
+        &-right{
+            position: fixed;
+            left: 50px;
+        }
+        &-btn {
+            padding: 10px;
+            background-color: white;
+            border: 1px solid slateblue;
+            color: slateblue;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        &-selected {
+            background-color: slateblue;
+            color: white;
+        }
+
+
+
+
+
+    }
+
+
+}

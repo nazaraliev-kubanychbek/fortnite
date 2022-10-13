@@ -1,0 +1,82 @@
+.skin {
+
+&-relative{
+    position: relative;
+}
+&__go-back-btn{
+    position: fixed;
+    cursor: pointer;
+    left: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+    &__similar{
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+    &__img {
+        width: 100%;
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-bottom: 15px;
+    }
+
+    &__rarity {
+        color: slateblue;
+        font-weight: 900;
+    }
+
+    &__details {
+        span {
+            color: slategray;
+        }
+    }
+
+    &__price {
+        margin-top: 10px;
+        color: red;
+    }
+
+    &__btn-buy {
+        background-color: red;
+        color: yellow;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px -2px rgb(159, 49, 49);
+        animation-name: button;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+animation-direction: alternate;
+
+        &:hover {
+
+            background-color: rgb(218, 40, 40);
+            transition: .5s;
+
+        }
+
+        &:active {
+            background-color: green;
+        }
+    }
+
+
+
+
+}
+
+
+@keyframes button {
+    100%{
+        transform: scale(1.12);
+    }
+}

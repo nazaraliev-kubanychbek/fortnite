@@ -1,0 +1,35 @@
+.cart {
+
+    &__empty {
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        img {
+            width: 50px;
+
+        }
+button{
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+        &-left,
+        &-rigth {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+    }
+
+}
